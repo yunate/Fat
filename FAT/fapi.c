@@ -51,7 +51,7 @@ FAPI_RES Fapi_Init(int nIndex)
 {
 	FRESULT res = FR_DISK_ERR;
 
-	if (RES_OK == assign_drives(LD2PD(4)))
+	if (RES_OK == assign_drives(LD2PD(nIndex)))
 	{
 		TCHAR path[10];
 		wsprintf(path, L"%d:", LD2PD(nIndex));
