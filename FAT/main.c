@@ -14,7 +14,7 @@ int main(void)
 	GetLocalTime(&tm1);
 	{
 		Fapi_Init(4);
-		Fapi_CopyDir(L"4:", L"C:\\Users\\ydh\\Desktop\\新建文件夹");
+		Fapi_CopyDir(L"4:", L"C:\\Users\\New");
 		Fapi_UnInit(4);
 	}
 	GetLocalTime(&tm2);
